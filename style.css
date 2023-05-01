@@ -374,4 +374,7 @@ header {
         margin: 2rem  auto;
         left: 25%;
     }
+    main{
+        margin-top: 2rem;
+    }
 }
