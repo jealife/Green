@@ -371,6 +371,7 @@ header {
         justify-content: center;
     }
     .plant div:nth-child(2){
+        position:relative;
         margin: 2rem  auto;
         left: 25%;
     }
