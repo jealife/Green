@@ -252,6 +252,7 @@ header {
     padding: 0 3rem;
     justify-content: flex-end;
 }
+
 .lines {
     width: 180px;
     height: 100%;
@@ -262,7 +263,8 @@ header {
     align-items: center;
     position: relative;
 }
-.plant .lines span{
+
+.plant .lines span {
     margin-left: 10px;
     display: block;
     width: 1px;
@@ -272,7 +274,7 @@ header {
 
 .plant div:nth-child(2) {
     position: absolute;
-    margin:0  2rem 2rem 0.5rem;
+    margin: 0 2rem 2rem 0.5rem;
     z-index: 5;
     width: max-content;
     background: rgba(255, 255, 255, 0.2);
@@ -326,56 +328,103 @@ header {
 }
 
 @media only screen and (max-width: 900px) {
-    header{
+    header {
         padding-right: 1.5rem;
         padding-left: 1.5rem;
     }
-    .hero{
+
+    .hero {
         flex-direction: column;
     }
+
     .description h1 {
         font-size: 3rem;
     }
+
     .description {
         padding-right: 1rem;
     }
-    
-    .card{
+
+    .card {
         position: relative;
         z-index: 5;
         top: initial;
         right: initial;
-        margin-bottom:  0 0 -100rem 0;
+        margin-bottom: 0 0 -100rem 0;
         justify-self: center;
     }
-    .hero div:nth-child(2){
-        margin:2rem 0;
+
+    .hero div:nth-child(2) {
+        margin: 2rem 0;
     }
-    .plant{
+
+    .plant {
         position: absolute;
         width: 80%;
         top: initial;
         left: 10%;
         margin: -5rem 0 0 0;
     }
+
     .btn {
         padding: 5px 15px;
         border-radius: 10px;
     }
-    .hero-items{
+
+    .hero-items {
         width: 100%;
     }
-    .mobile-card{
+
+    .mobile-card {
         width: 100%;
         display: flex;
         justify-content: center;
     }
-    .plant div:nth-child(2){
-/*         position:relative; */
-        margin: 2rem  auto;
-        left: 25%;
+
+    .plant div:nth-child(2) {
+        /*         position:relative; */
+        margin: 2rem auto;
+        left: 30%;
+        text-align: center;
+        width: 40%;
     }
-    main{
+
+    main {
         margin-top: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        top: 20%;
+        right: 25%;
+    }
+
+    nav {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .plant div:nth-child(2) {
+        /*         position:relative; */
+        margin: 2rem auto;
+        left: 38%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .plant div:nth-child(2) {
+        margin: 2rem auto;
+        left:10%;
+        width: 80%;
+        text-align: center;
+
     }
 }
